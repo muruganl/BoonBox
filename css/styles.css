@@ -1,0 +1,139 @@
+/* Customize pages */
+
+@import url("fonts.css");
+.ui-page, body, input, select, textarea, button, .ui-btn, .ui-listview>li h1, .ui-listview>li h2, .ui-listview>li h3, .ui-listview>li h4, .ui-listview>li h5, .ui-listview>li h6, .ui-btn, label.ui-btn, .ui-page-theme-b a, html .ui-bar-b a, html .ui-page-theme-b a, html body .ui-group-theme-b a, .ui-body-a, .ui-body-a input, .ui-body-a select, .ui-body-a textarea, .ui-body-a button {
+	font-weight: 300;
+}
+.ui-header.ui-bar-b {
+	background: #fff !important;
+	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+.ui-header.ui-bar-b h1{ margin:0}
+.ui-header.ui-bar-b, .ui-page-theme-b .ui-dialog-contain .ui-title {
+    border-bottom: 2px solid #ff7979;
+}
+.topLinks a { float:left; margin-left:15px;margin-top: 5px;}
+.header-top { padding:5px 10px 15px; clear:both}
+.ui-overlay-a { background-color: rgba(255,255,255,0.5); color:#000}
+.ui-footer{ background: #d7d6d4 !important;
+    border-color: #bbb9ba;
+	text-align:center;
+    color: #333;
+    font-weight: 300;
+	font-size:13px
+    text-shadow: 0 1px 0 #eee; padding:10px 0}
+.ui-footer p { font-size:13px; margin:3px}
+.search-form { margin-bottom:20px}
+.search-form input { padding:10px 10px !important }
+.ui-listview > .ui-li-divider {
+    cursor: default;
+    font-size: 16px;
+    font-weight: 700;
+    outline: 0 none;
+    padding: 0.5em 1.143em;
+	background:none;
+	color:#000;
+	font-family:font-family: "Roboto", sans-serif;
+	border-top:0;
+	text-transform:uppercase
+}
+.product-list .ui-li-heading { margin-top:0; }
+.product-list .inner-header { margin-bottom:5px}
+.product-list .ui-link-inherit{ padding-top:0 !important}
+.inner-header h2 { margin-top:10px; float:left; font-weight:400; margin-bottom:0}
+.inner-header { display:block; overflow:hidden;margin-bottom: 1em;}
+.inner-header .right-side { float:right}
+.inner-header .right-side a { float:left; margin-left:10px;}
+.inner-header .right-side .ui-btn-inner { padding:5px 10px}
+
+.list_product li a { padding-bottom:0 !important}
+.list_product li .ui-li-heading { font-weight:500}
+.list_product li a img { margin-top:2px}
+.group-btns { margin-bottom:25px; text-align:center;}
+.prod-sepration {  clear:both; display:table}
+.prod-sepration img{ max-height: 100px;
+    max-width: 100px; margin-right:10px}
+.prod-sepration h3, .prod-sepration p { margin:5px 0}	
+
+.header-top .ui-link .left-ar{    
+	color: #555;
+    float: left;
+    font-size: 18px;
+    margin-right: 3px;
+    margin-top: 14px;
+	color:#f75548
+}
+.setting-hme-top { background: none !important; color:#000; border: none !important; font-size:18px}
+.setting-hme-top:hover { color:#333; background: none !important; box-shadow:none !important}
+
+.pos-relative { position: relative}
+.user-input input { padding-left:1.5em !important; }
+.user-input i{ position:absolute; left:12px; top:31px; color:#888}
+ #login-button {
+            margin-top: 20px;
+        }  
+.login-inner { margin-top:1em}	
+.login-inner .ui-header { text-align:center; margin-bottom:0.5em}	
+.login-inner h4 { text-align:center}
+.login-inner .ui-link{ color:#333; font-weight:normal}
+
+/* Breadcrumb */
+.breadcrumbs {
+margin-top: 0;
+}
+.breadcrumbs ul { padding-left:10px}
+.breadcrumbs ul li {
+display: inline;
+line-height: 1.35;
+font-size: 12px;
+}
+.breadcrumbs ul li a{color: #2489ce !important; text-decoration:none}
+/* Gallery */
+.gallery {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.gallery li {
+float: left;
+width: 33%;
+}
+.gallery li a {
+display: block;
+margin: 0 10px 0px 0;
+}
+.gallery li img {
+display: block;
+width: 100%;
+height: auto;
+}
+
+#swipebox-container .slide  img {
+width: 100%;
+height: auto;
+margin-top:3em
+}
+.in-stock {  clear: both;
+    content: "";
+    float: left;
+    font-size: 12px;}
+.in-stock p {text-shadow: 0 1px 0 #fff; margin:10px 0 5px}
+.price-box {
+float: left;
+font-size: 22px;
+width: 100%;
+}
+.price {
+font-weight: bold;
+white-space: nowrap;
+}
+.add-to-box { clear: both;
+    content: "";
+}
+.quantity div.ui-input-text { margin:0; padding:0px 10px !important}
+.quantity .ui-input-text input { padding:2px 3px !important }
+.list-minimal li { font-size:13px; font-weight:normal}
+
+#quick-info h2 {
+font-size: 110%;
+}

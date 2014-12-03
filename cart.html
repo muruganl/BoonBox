@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Boonbox Online Shopping Cart</title>
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/swipebox.min.css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<script src="js/customised.js"></script>
+<script src="js/jquery.swipebox.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="product-detail">
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+    <div class="header-top">
+      <div class="pull-left">
+        <h1><a href="index.html" data-transition="slide"><i class='fa fa-chevron-left left-ar'></i> <img src="images/logo-papa.png" alt="Boonbox"></a></h1>
+      </div>
+      <div class="pull-right topLinks"> <a href="#viewcart" data-rel="dialog" data-transition="pop" data-role="button" data-theme="a"> <i class='lIcon fa fa-shopping-cart'></i> <span class="ui-li-count">28</span> </a> <a href="#settingMenu" data-rel="popup" data-role="button" data-transition="slidedown" data-theme="a" class="setting-hme-top"><i class='fa fa-ellipsis-v'></i></a> </div>
+    </div>
+  </div>
+  <div class="product-detail">
+    <div class="breadcrumbs">
+      <ul>
+        <li class="home"> <a href="#" title="Go to Home Page">Home</a> <span>/ </span> </li>
+        <li class="category3"> <a href="#" title="">Electronics</a> <span>/ </span> </li>
+        <li class="category4"> <a href="#" title="">Mobiles</a> <span>/ </span> </li>
+        <li class="product"> <strong>iBall Aasaan2</strong> </li>
+      </ul>
+    </div>
+    <div data-role="header" data-theme="c">
+      <h2> Shopping Cart</h2>
+    </div>
+    <div data-role="content">
+      
+      
+      
+  </div>
+  <!-- /content --> 
+  
+  <!---Footer----->
+  <div data-role="footer" data-position="fixed" data-theme="a" class=" ui-footer-center">
+    <p>Copyright 2014 Boonbox Online Shopping Cart. </p>
+    <p>Toll Free No: +91 98411 11943 </p>
+  </div>
+  <div data-role="popup" id="settingMenu" data-theme="c">
+    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+      <li data-role="divider" data-theme="e">Settings</li>
+      <li data-icon='false'><a href="#"><i class='fa fa-user'></i> Edit Profile</a></li>
+      <li data-icon='false'><a href="#"><i class='fa fa-sign-out'></i> Logout</a></li>
+      <li data-icon='false'><a href="#closeit" data-rel="close"><i class='lIcon fa fa-close'></i> Close it!</a></li>
+    </ul>
+  </div>
+</div>
+<!-- /page -->
+
+<div data-role="page" id="electronics">
+  <div data-role="content">
+    <div class="search-form">
+      <table style='width:100%'>
+        <tr>
+          <td><input type="search" name="search" placeholder="Search" data-inline="true" ></td>
+          <td style='font-size:80%; width:7em'><button id="btnUpdateWhat" type="search" data-inline='true'><i class='lIcon fa fa-search-plus'></i></button></td>
+        </tr>
+      </table>
+    </div>
+    <p>Test</p>
+  </div>
+</div>
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="viewcart" data-theme="a">
+  <div data-role="header">
+    <h1>View Cart</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <h2>Your Order</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+    <p><a href="#one" data-rel="back" data-role="button">Submit</a></p>
+  </div>
+  <!-- /content --> 
+</div>
+<!-- /page popup --> 
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+			/* Basic Gallery */
+			$( '.swipebox' ).swipebox();
+      });
+	</script>
+</body>
+</html>
