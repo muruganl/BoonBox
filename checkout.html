@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Boonbox Online Shopping Cart</title>
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="css/swipebox.min.css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<script src='js/jquery.MetaData.js' type="text/javascript" language="javascript"></script>
+<script src='js/jquery.rating.js' type="text/javascript" language="javascript"></script>
+<script src="js/customised.js"></script>
+<script src="js/jquery.swipebox.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="view-cart">
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='c'>
+    <div class="header-top" style="padding-left:0">
+      <div class="pull-left">
+        <h1><a href="#catlists"><i class='fa fa-bars left-ar'></i> </a> <a href="home.html" data-ajax='false'><img src="images/logo-papa.png" alt="Boonbox"></a></h1>
+      </div>
+      <div class="pull-right topLinks"> <a href="#searchpanel"> <i class='fa fa-search'></i> </a> <a href="cart.html" class="cart-link"> <i class='fa fa-shopping-cart'></i> <span> 5</span> </a> <a class="setting-hme-top" href="#settingm"><i class='fa fa-ellipsis-v'></i></a> </div>
+    </div>
+  </div>
+  <div class="product-detail">
+    <div data-role="header" data-theme="c">
+      <h2>Checkout</h2>
+    </div>
+    <div data-role="content">
+      <div data-role="collapsible-set" data-theme="c" data-content-theme="c"  data-iconpos="right">
+        <div data-role="collapsible" data-collapsed="true">
+          <h3><span>1. </span>Customer Registration</h3>
+          <form>
+            <fieldset data-role="controlgroup" data-mini="true">
+              <input type="radio" name="radio-choice-v-6" id="radio-choice-v-6a" value="on" checked="checked">
+              <label for="radio-choice-v-6a">New Customer</label>
+              <input type="radio" name="radio-choice-v-6" id="radio-choice-v-6b" value="off">
+              <label for="radio-choice-v-6b">Already Customer</label>
+            </fieldset>
+          </form>
+          <a href="#" data-role="button" data-theme="a" data-mini="true" id="continue1">Continue</a> </div>
+        <div data-role="collapsible" id="billing">
+          <h3><span>2. </span>Billing Information</h3>
+          <fieldset>
+            <ul class="bill-form">
+              <li>
+                <label for="billing:firstname" class="required"><em>*</em>First Name</label>
+                <input type="text" value="" title="First Name" maxlength="255" class="input-text required-entry" />
+                <label for="billing:lastname" class="required"><em>*</em>Last Name</label>
+                <input type="text" value="" title="Last Name" maxlength="255" class="input-text required-entry"  />
+              </li>
+               <li>
+                <label for="billing:telephone" class="required"><em>*</em>Telephone</label>
+                <input type="text" name="billing[telephone]" value="" title="Telephone" class="input-text  required-entry" id="billing:telephone" />
+                <label for="billing:telephone" class="required">Alternative Mobile Number</label>
+                <input type="text" name="billing[telephone]" value="" title="Telephone" class="input-text  required-entry" id="billing:telephone" />
+              </li>
+              <li>
+                <label for="billing:gender">Gender</label>
+                <div>
+                    <select  name="select-choice" id="select-choice-c" data-native-menu="false" data-theme="c">
+                    <option value="">--Select--</option>
+                      <option value="">Male</option>
+                      <option value="">Female</option>
+                    </select>
+                </div>
+              </li>
+              <li>
+                <label for="billing:marital">Marital Status</label>
+               
+                <div>
+                    <select  name="select-choice" id="select-choice-d" data-native-menu="false" data-theme="c">
+                     <option value="">--Select--</option>
+                      <option value="">Single</option>
+                      <option value="">Married</option>
+                    </select>
+                </div>
+              </li>
+              <li>
+                <label for="billing:street1" class="required"><em>*</em>Address</label>
+                <input type="text" title="Street Address" value="" class="input-text  required-entry" />
+              </li>
+              <li>
+                <input type="text" title="Street Address 2" value="" class="input-text " />
+              </li>
+              <li>
+                <label for="billing:city" class="required"><em>*</em>City</label>
+                <input type="text" title="City" value="" class="input-text  required-entry" id="billing:city" />
+                <label for="billing:region_id" class="required"><em>*</em>State</label>
+                <div>
+                    <select  name="select-choice" id="select-choice-a" data-native-menu="false" data-theme="c">
+                      <option value="">Tamil nadu</option>
+                      <option value="">Andhra Pradesh</option>
+                      <option value="">Karnadaka</option>
+                    </select>
+                </div>
+              </li>
+              <li>
+                <label for="billing:postcode" class="required"><em>*</em>Postal Code</label>
+                <input type="text" title="Postal Code" value="" />
+                <label for="billing:country_id" class="required"><em>*</em>Country</label>
+                <select title="Country" >
+                  <option value="IN" >India</option>
+                </select>
+              </li>
+             
+              <li>
+                <form>
+            <fieldset data-role="controlgroup" data-mini="true">
+              <legend>Product delivery:</legend>
+              <input type="radio" name="radio-choice-v-6" id="radio-choice-v-6a" value="on" checked="checked">
+              <label for="radio-choice-v-6a">Ship to this address</label>
+              <input type="radio" name="radio-choice-v-6" id="radio-choice-v-6b" value="off">
+              <label for="radio-choice-v-6b">Ship to other address</label>
+            </fieldset>
+          </form>
+              </li>
+            </ul>
+          </fieldset>
+          <a href="#" data-role="button" data-theme="a" data-mini="true" id="continue2">Continue</a> </div>
+        <div data-role="collapsible" id="shipping">
+          <h3><span>3. </span>Shipping Method</h3>
+          
+          <p><strong>Free Shipping</strong></p>
+          <p>Free Rs.00</p>
+          <p> <a href="#" id="continue1"><i class="fa fa-arrow-circle-left"></i> Back</a></p>
+          <a href="#" data-role="button" data-theme="a" data-mini="true" id="continue3">Continue</a> </div>
+        <div data-role="collapsible" id="payments">
+          <h3><span>4. </span>Payment Information</h3>
+          
+          <p>Cash On Delivery</p>
+          <p>* Required Fields</p>
+          <p> <a href="#" id="continue1"><i class="fa fa-arrow-circle-left"></i> Back</a></p>
+          
+          <form>
+            <fieldset data-role="controlgroup" data-mini="true">
+              <legend>Payment Mode:</legend>
+              <input type="radio" name="radio-choice-v-6" id="radio-choice-v-6a" value="on" checked="checked">
+              <label for="radio-choice-v-6a">By Cash</label>
+              <input type="radio" name="radio-choice-v-6" id="radio-choice-v-6b" value="off">
+              <label for="radio-choice-v-6b">By Cheque</label>
+            </fieldset>
+          </form>
+          <a href="#" data-role="button" data-theme="a" data-mini="true">Continue</a> </div>
+          
+          
+          
+           <div data-role="collapsible" id="orders">
+            <h3><span>5. </span>Order Review</h3>
+            
+            <table class="cart-table" style="width:100%">
+        
+          <thead>
+            <tr class="ui-bar-c table">
+            <th rowspan="1"  class="a-left"><span class="nobr">Product Name</span></th>
+              <th rowspan="1" class="a-center">Price</th>
+              
+              <th rowspan="1" class="a-center">Qty</th>
+              <th class="a-center" colspan="1">Sub total</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+            <tr>
+              <td><h4>iBall Aasaan2</h4></td>
+              <td class="a-right">Rs. 399</td>
+              <td class="a-center">1</td>
+              <td class="a-right">Rs. 399</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td colspan="2" class="a-right">Sub total</td>
+              <td class="a-right">Rs. 399</td>
+              </tr>
+            <tr>
+              <td colspan="3" class="a-right">Shipping &amp; Handling (Free Shipping - Free)</td>
+              <td class="a-right">Rs. 0</td>
+            </tr>
+            <tr>
+              <td><h4>&nbsp;</h4></td>
+              <td colspan="2" class="a-right">Grand total</td>
+              <td class="a-right">Rs. 399</td>
+            </tr>
+            
+     
+        
+          
+          </tbody>
+        </table>
+          	
+            <a data-role="button" data-theme="a" data-mini="true" href="#orderDone" data-rel="dialog" data-transition="pop" >Place Order</a>
+          </div>
+        <div data-role="collapsible" id="reviews">
+          <h3>6. Review the Product</h3>
+          
+          
+          <form>
+            <fieldset>
+              <ul class="bill-form">
+               <li>
+                <div class=" star-ratings">
+                 <input name="star2" type="radio" class="star"/> <input name="star2" type="radio" class="star"/> <input name="star2" type="radio" class="star" checked="checked"/> <input name="star2" type="radio" class="star"/> <input name="star2" type="radio" class="star"/> 
+                </div>
+               </li>
+                <li>
+                  <label for="nickname_field" class="required"><em>*</em>Nickname</label>
+                  <input type="text" name="nickname" id="nickname_field" value="" />
+                 
+                <li>
+                  <label for="summary_field" class="required"><em>*</em>Summary of Your Review</label>
+                  <input type="text" name="title" id="summary_field" value="" />
+                </li>
+                <li>
+                  <label for="review_field" class="required"><em>*</em>Review</label>
+                  <textarea name="detail" id="review_field" cols="5" rows="3"></textarea>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" title="Submit Review" class="button" data-theme="c">Submit Review</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+       <!--setting menu--->
+  <div data-role="panel" class="setting_menu" id="settingm" data-position="right" data-display="overlay" data-theme="c">
+    <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+      <li> <a href="#" data-transition="slide"><i class='fa fa-user'></i> Ramkumar</a> </li>
+      <li> <a href="#"><i class='fa fa-heart'></i> WishList</a> </li>
+      <li> <a href="#"><i class='fa fa-truck'></i> My Orders</a> </li>
+      <li> <a href="#"><i class='fa fa-newspaper-o'></i> My Address</a> </li>
+      <li> <a href="index.html"><i class='fa fa-power-off'></i> Logout</a> </li>
+    </ul>
+  </div>
+  
+  <!-- /panel --> 
+  <div data-role="panel" class="searchpanel" id="searchpanel" data-position="right" data-display="overlay" data-theme="c">
+    <div class="search-form">
+      <table style='width:100%'>
+        <tr>
+          <td><input type="search" name="search" placeholder="Search" data-inline="true" ></td>
+          <td style='font-size:80%; width:7em'><button id="btnUpdateWhat" type="search" data-inline='true'><i class='fa fa-search-plus'></i></button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- /panel --> 
+  
+  <!----Right menu--->
+  <div data-role="panel" id="catlists" class="cate-list" data-position="left" data-display="overlay" data-theme="c">
+    <ul data-role="collapsible-set" data-inset="false">
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-desktop'></i> Electronics</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Mobile Phones</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Fone pad</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-fire'></i> Cookware</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Pressure Cooker</a></li>
+          <li><a href="#">Non-Stick</a></li>
+          <li><a href="#">Cooker</a></li>
+          <li><a href="#">SS Utensils</a></li>
+          <li><a href="#">Murugan</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-camera-retro'></i> Home & Kitchen Appliances</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Personal Care</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-stethoscope'></i> Health</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Personal Care</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-briefcase'></i> Accessories</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Portable Scanner</a></li>
+          <li><a href="#">Stylus Pens</a></li>
+          <li><a href="#">Laptop Cooler</a></li>
+          <li><a href="#">USB Hub</a></li>
+          <li><a href="#">Head Phones</a></li>
+          <li><a href="#">Shutter Ball</a></li>
+          <li><a href="#">Power Banks</a></li>
+          <li><a href="#">Portable Speakers</a></li>
+          <li><a href="#">Health Devices</a></li>
+          <li><a href="#">Retro Handset</a></li>
+          <li><a href="#">Mouse	</a></li>
+        </ul>
+      </li>
+ 
+</ul>
+  </div>
+    
+    
+    <!---Footer----->
+    <div data-role="footer" data-position="fixed" data-theme="a" class=" ui-footer-center footer-pg">
+      <p>Copyright 2014 Boonbox Online Shopping Cart. </p>
+      <p>Toll Free No: +91 98411 11943 </p>
+    </div>
+    
+  </div>
+</div>
+<!-- /page --> 
+
+<!-- Start of third page: #popup -->
+<div data-role="page" id="orderDone" data-theme="a">
+  <div data-role="header">
+    <h1>Your Order Confirmed</h1>
+  </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <p>Thanks for purchasing a product, we will send the product soon.</p>
+  </div>
+  <!-- /content --> 
+</div>
+<!-- /page popup --> 
+
+<script type="text/javascript">
+    $('#continue1').click(function() {
+     $('#billing').trigger('expand');
+	});
+	$('#continue2').click(function() {
+     $('#shipping').trigger('expand');
+	});
+	$('#continue3').click(function() {
+     $('#payments').trigger('expand');
+	});
+	$('#continue4').click(function() {
+     $('#reviews').trigger('expand');
+	});
+
+  </script>
+</body>
+</html>

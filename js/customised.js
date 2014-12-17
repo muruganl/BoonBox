@@ -29,4 +29,65 @@ $(document).off('swiperight').on('swiperight', 'article', function(event){
     return false;            
 });
 
+//* Loading screen
+$ (function(){
+setTimeout(function(){
+    $.mobile.changePage("#login", "fade");
+}, 3000);
+});
+
+
+
+//* App store
+
+$(function(){
+	//Featured Slide
+	var featuredSwiper = $('.featured').swiper({
+		slidesPerView:'auto',
+		centeredSlides: true,
+		autoplay:3000,
+		initialSlide:7,
+		tdFlow: {
+			rotate : 30,
+			stretch :10,
+			depth: 150
+		}
+	})
+	
+	//Thumbs
+	$('.thumbs-cotnainer').each(function(){
+		$(this).swiper({
+			slidesPerView:'auto',
+			offsetPxBefore:25,
+			offsetPxAfter:10,
+			calculateHeight: true
+		})
+	})
+
+	//Banners
+	$('.banners-container').each(function(){
+		$(this).swiper({
+			slidesPerView:'auto',
+			autoplay:4000,
+			offsetPxBefore:25,
+			offsetPxAfter:10
+		})	
+	})
+})
+
+// Star Rating
+      $(function () {
+        $('input.check').on('change', function () {
+          alert('Rating: ' + $(this).val());
+        });
+        $('.rating-tooltip').rating({
+          extendSymbol: function (rate) {
+            $(this).tooltip({
+              container: 'body',
+              placement: 'bottom',
+              title: 'Rate ' + rate
+            });
+          }
+        });
+      });
 

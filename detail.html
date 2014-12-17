@@ -12,17 +12,21 @@
 <link rel="stylesheet" href="css/swipebox.min.css">
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+<script src='js/jquery.MetaData.js' type="text/javascript" language="javascript"></script>
+<script src='js/jquery.rating.js' type="text/javascript" language="javascript"></script>
+
 <script src="js/customised.js"></script>
 <script src="js/jquery.swipebox.min.js"></script>
 </head>
 <body>
 <div data-role="page" id="product-detail">
-  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-    <div class="header-top">
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='c'>
+    <div class="header-top" style="padding-left:0">
       <div class="pull-left">
-        <h1><a href="index.html" data-transition="slide"><i class='fa fa-chevron-left left-ar'></i> <img src="images/logo-papa.png" alt="Boonbox"></a></h1>
+        <h1><a href="#catlists"><i class='fa fa-bars left-ar'></i> </a> <a href="home.html" data-ajax='false'><img src="images/logo-papa.png" alt="Boonbox"></a></h1>
       </div>
-      <div class="pull-right topLinks"> <a href="#viewcart" data-rel="dialog" data-transition="pop" data-role="button" data-theme="a"> <i class='lIcon fa fa-shopping-cart'></i> <span class="ui-li-count">28</span> </a> <a href="#settingMenu" data-rel="popup" data-role="button" data-transition="slidedown" data-theme="a" class="setting-hme-top"><i class='fa fa-ellipsis-v'></i></a> </div>
+      <div class="pull-right topLinks"> <a href="#searchpanel"> <i class='fa fa-search'></i> </a> <a href="cart.html" class="cart-link"> <i class='fa fa-shopping-cart'></i> <span> 5</span> </a> <a class="setting-hme-top" href="#settingm"><i class='fa fa-ellipsis-v'></i></a> </div>
     </div>
   </div>
   <div class="product-detail">
@@ -38,169 +42,168 @@
       <h2> iBall Aasaan2</h2>
     </div>
     <div data-role="content">
-      <div class="ui-body ui-body-b">
+      <div class="ui-body ui-body-b bg-lightgrey">
         <div id="gallery">
           <ul class="gallery">
             <li><a href="images/product/aasaan2fr.jpg" class="swipebox" title="iBall Aasaan2 Front side"><img id="productImgDefault" src="images/product/aasaan2fr.jpg" alt="iBall Aasaan2" title="iBall Aasaan2 Back"></a></li>
             <li><a href="images/product/aasaan2back.jpg" class="swipebox" title="iBall Aasaan2 Back side"><img id="productImgDefault" src="images/product/aasaan2back.jpg" alt="iBall Aasaan2" title="iBall Aasaan2 Back"></a></li>
           </ul>
         </div>
-        
         <div class="in-stock">
-         <p>Availability: <span>In stock</span></p>
-          <p>Star Rating</p>
-        </div>	
-        
-        <div class="price-box">
-            <span class="price">Rs. 3500.00</span>                                    
+          <p>Availability: <span>In stock</span></p>
+          <div class="star-ratings">
+           <input name="star3" type="radio" class="star" disabled="disabled"/> <input name="star3" type="radio" class="star" disabled="disabled"/> <input name="star3" type="radio" class="star" disabled="disabled" checked="checked"/> <input name="star3" type="radio" class="star" disabled="disabled" checked="checked"/> <input name="star3" type="radio" class="star" disabled="disabled"/>
+          </div>
         </div>
-        
+        <div class="price-box"> <span class="price">Rs. 3500.00</span> </div>
         <div class="add-to-box">
-         
-         <div class="ui-grid-b quantity" data-theme="a">
-            <div class="ui-block-a"><div class="ui-bar ui-bar-c"><label for="qty" class="ui-input-text">Quantity:</label> </div></div>
-            <div class="ui-block-b"><div class="ui-bar ui-bar-c"><input type="text" name="qty" id="qty"  value="1" title="Qty"></div></div>
-      
-         </div><!-- /grid-b -->
-         <a href="#" data-role="button" data-theme="a">Add to Cart</a>
-         
-        </div>
-        
+          <div class="ui-grid-b quantity" data-theme="a">
+            <div class="ui-block-a">
+              <div class="ui-bar ui-bar-c">
+                <label for="qty" class="ui-input-text">Quantity:</label>
+              </div>
+            </div>
+            <div class="ui-block-b">
+              <div class="ui-bar ui-bar-c">
+                <input type="text" name="qty" id="qty"  value="1" title="Qty">
+              </div>
+            </div>
+          </div>
+<div>
+ <fieldset data-role="controlgroup" data-mini="true" >
+                <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a" data-theme="c">
+                <label for="checkbox-v-2a">Add to compare?</label>
+                <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b" data-theme="c">
+                <label for="checkbox-v-2b">Add to whislist?</label>
+            </fieldset>
+   
+</div>
+          <a href="#" data-role="button" data-theme="a">Add to Cart</a> </div>
       </div>
-      
       <div class="product-descrip">
         <div data-role="header" data-theme="c">
-         <h3>Product Details</h3>
+          <h3>Product Details</h3>
         </div>
-        
-         <div id="quick-info">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-    </div>
-    
-    <div id="product-tabs" data-role="collapsible-set" data-content-theme="c">
-                                                                                <div class="product-tab" data-role="collapsible">
-                            <h2>Description</h2>
-                            <ul data-role="listview list-minimal">
-                <li>Large Keypad with Large Buttons</li>
-                <li> Talking Keypad </li>
-                <li>Large Display Fonts </li>
-                <li>Large Keypad with Large Buttons</li>
-                <li> Talking Keypad </li>
-                <li>Large Display Fonts </li>
-                <li>Large Keypad with Large Buttons</li>
-                <li> Talking Keypad </li>
-                <li>Large Display Fonts </li>
-            </ul>                </div>
-                                     
-
-                
-                
-                                                 
-
-                                                                    <div class="product-tab box-description" data-role="collapsible">
-                                                                    <h2>Additional Information</h2>
-    <div class="std">
-        <table class="ui-responsive table-stroke">
-        <tbody><tr class="first odd">
-        <td class="label">Weight (Gms)</td>
-        <td class="data last">100.0000</td>
-    </tr>
-        <tr class="even">
-        <td class="label">Brand</td>
-        <td class="data last">iBall</td>
-    </tr>
-        <tr class="odd">
-        <td class="label">Network :</td>
-        <td class="data last">GSM 900/1800 MHz
-Dual SIM Dual Standby</td>
-    </tr>
-        <tr class="even">
-        <td class="label">Processor :</td>
-        <td class="data last">No</td>
-    </tr>
-        <tr class="odd">
-        <td class="label">Connectivity :</td>
-        <td class="data last">No</td>
-    </tr>
-        <tr class="even">
-        <td class="label">Design &amp; Display :</td>
-        <td class="data last">Bar design
-4.5 cm (1.77”) Bright &amp; Clear Display
-LED Torch with dedicated side key</td>
-    </tr>
-        <tr class="odd">
-        <td class="label">Operating System :</td>
-        <td class="data last">No</td>
-    </tr>
-        <tr class="even">
-        <td class="label">GPS :</td>
-        <td class="data last">No</td>
-    </tr>
-        <tr class="odd">
-        <td class="label">Camera :</td>
-        <td class="data last">Digital Camera</td>
-    </tr>
-        <tr class="even">
-        <td class="label">RAM</td>
-        <td class="data last">N/A</td>
-    </tr>
-        <tr class="odd">
-        <td class="label">Memory &amp; Storage :</td>
-        <td class="data last">Phonebook – 500 SMS - 100 Micro SD Card support up to 8 GB</td>
-    </tr>
-        <tr class="even">
-        <td class="label">Music &amp; Video :</td>
-        <td class="data last">Enjoy Music with High Quality Loud Speakers
-Music &amp; Video Player
-Wireless FM Radio with dedicated side key</td>
-    </tr>
-        <tr class="odd">
-        <td class="label">Battery :</td>
-        <td class="data last">1000mAh Battery</td>
-    </tr>
-        <tr class="even">
-        <td class="label">Additional features </td>
-        <td class="data last">GSM 900/1800 MHz
-Dual SIM Dual Standby
-Dual language support – English and Hindi
-Dedicated side key for volume up and down</td>
-    </tr>
-        <tr class="odd">
-        <td class="label">Warranty coverage</td>
-        <td class="data last">1 Year</td>
-    </tr>
-        <tr class="last even">
-        <td class="label">Dimensions</td>
-        <td class="data last">No</td>
-    </tr>
-        </tbody></table>     </div>
-                            </div>
-    
-        
+        <div id="quick-info">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
+        <div id="product-tabs" data-role="collapsible-set" data-content-theme="c">
+          <div class="product-tab" data-role="collapsible">
+            <h2>Description</h2>
+            <ul data-role="listview list-minimal">
+              <li>Large Keypad with Large Buttons</li>
+              <li> Talking Keypad </li>
+              <li>Large Display Fonts </li>
+              <li>Large Keypad with Large Buttons</li>
+              <li> Talking Keypad </li>
+              <li>Large Display Fonts </li>
+              <li>Large Keypad with Large Buttons</li>
+              <li> Talking Keypad </li>
+              <li>Large Display Fonts </li>
+            </ul>
+          </div>
+          <div class="product-tab box-description" data-role="collapsible">
+            <h2>Additional Information</h2>
+            <div class="std">
+              <table class="ui-responsive table-stroke">
+                <tbody>
+                  <tr class="first odd">
+                    <td class="label">Weight (Gms)</td>
+                    <td class="data last">100.0000</td>
+                  </tr>
+                  <tr class="even">
+                    <td class="label">Brand</td>
+                    <td class="data last">iBall</td>
+                  </tr>
+                  <tr class="odd">
+                    <td class="label">Network :</td>
+                    <td class="data last">GSM 900/1800 MHz
+                      Dual SIM Dual Standby</td>
+                  </tr>
+                  <tr class="even">
+                    <td class="label">Processor :</td>
+                    <td class="data last">No</td>
+                  </tr>
+                  <tr class="odd">
+                    <td class="label">Connectivity :</td>
+                    <td class="data last">No</td>
+                  </tr>
+                  <tr class="even">
+                    <td class="label">Design &amp; Display :</td>
+                    <td class="data last">Bar design
+                      4.5 cm (1.77”) Bright &amp; Clear Display
+                      LED Torch with dedicated side key</td>
+                  </tr>
+                  <tr class="odd">
+                    <td class="label">Operating System :</td>
+                    <td class="data last">No</td>
+                  </tr>
+                  <tr class="even">
+                    <td class="label">GPS :</td>
+                    <td class="data last">No</td>
+                  </tr>
+                  <tr class="odd">
+                    <td class="label">Camera :</td>
+                    <td class="data last">Digital Camera</td>
+                  </tr>
+                  <tr class="even">
+                    <td class="label">RAM</td>
+                    <td class="data last">N/A</td>
+                  </tr>
+                  <tr class="odd">
+                    <td class="label">Memory &amp; Storage :</td>
+                    <td class="data last">Phonebook – 500 SMS - 100 Micro SD Card support up to 8 GB</td>
+                  </tr>
+                  <tr class="even">
+                    <td class="label">Music &amp; Video :</td>
+                    <td class="data last">Enjoy Music with High Quality Loud Speakers
+                      Music &amp; Video Player
+                      Wireless FM Radio with dedicated side key</td>
+                  </tr>
+                  <tr class="odd">
+                    <td class="label">Battery :</td>
+                    <td class="data last">1000mAh Battery</td>
+                  </tr>
+                  <tr class="even">
+                    <td class="label">Additional features </td>
+                    <td class="data last">GSM 900/1800 MHz
+                      Dual SIM Dual Standby
+                      Dual language support – English and Hindi
+                      Dedicated side key for volume up and down</td>
+                  </tr>
+                  <tr class="odd">
+                    <td class="label">Warranty coverage</td>
+                    <td class="data last">1 Year</td>
+                  </tr>
+                  <tr class="last even">
+                    <td class="label">Dimensions</td>
+                    <td class="data last">No</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
-      
     </div>
   </div>
   <!-- /content --> 
   
-  <!---Footer----->
-  <div data-role="footer" data-position="fixed" data-theme="a" class=" ui-footer-center">
-    <p>Copyright 2014 Boonbox Online Shopping Cart. </p>
-    <p>Toll Free No: +91 98411 11943 </p>
-  </div>
-  <div data-role="popup" id="settingMenu" data-theme="c">
-    <ul data-role="listview" data-inset="true" style="min-width:210px;">
-      <li data-role="divider" data-theme="e">Settings</li>
-      <li data-icon='false'><a href="#"><i class='fa fa-user'></i> Edit Profile</a></li>
-      <li data-icon='false'><a href="#"><i class='fa fa-sign-out'></i> Logout</a></li>
-      <li data-icon='false'><a href="#closeit" data-rel="close"><i class='lIcon fa fa-close'></i> Close it!</a></li>
+ 
+ 
+   <!--setting menu--->
+  <div data-role="panel" class="setting_menu" id="settingm" data-position="right" data-display="overlay" data-theme="c">
+    <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+      <li> <a href="#" data-transition="slide"><i class='fa fa-user'></i> Ramkumar</a> </li>
+      <li> <a href="#"><i class='fa fa-heart'></i> WishList</a> </li>
+      <li> <a href="#"><i class='fa fa-truck'></i> My Orders</a> </li>
+      <li> <a href="#"><i class='fa fa-newspaper-o'></i> My Address</a> </li>
+      <li> <a href="index.html"><i class='fa fa-power-off'></i> Logout</a> </li>
     </ul>
   </div>
-</div>
-<!-- /page -->
-
-<div data-role="page" id="electronics">
-  <div data-role="content">
+  
+  <!-- /panel --> 
+  <div data-role="panel" class="searchpanel" id="searchpanel" data-position="right" data-display="overlay" data-theme="c">
     <div class="search-form">
       <table style='width:100%'>
         <tr>
@@ -209,9 +212,85 @@ Dedicated side key for volume up and down</td>
         </tr>
       </table>
     </div>
-    <p>Test</p>
+  </div>
+  <!-- /panel --> 
+  
+  <!----Right menu--->
+  <div data-role="panel" id="catlists" class="cate-list" data-position="left" data-display="overlay" data-theme="c">
+    <ul data-role="collapsible-set" data-inset="false">
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-desktop'></i> Electronics</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Mobile Phones</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Fone pad</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-fire'></i> Cookware</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Pressure Cooker</a></li>
+          <li><a href="#">Non-Stick</a></li>
+          <li><a href="#">Cooker</a></li>
+          <li><a href="#">SS Utensils</a></li>
+          <li><a href="#">Murugan</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-camera-retro'></i> Home & Kitchen Appliances</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Personal Care</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-stethoscope'></i> Health</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Personal Care</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-briefcase'></i> Accessories</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Portable Scanner</a></li>
+          <li><a href="#">Stylus Pens</a></li>
+          <li><a href="#">Laptop Cooler</a></li>
+          <li><a href="#">USB Hub</a></li>
+          <li><a href="#">Head Phones</a></li>
+          <li><a href="#">Shutter Ball</a></li>
+          <li><a href="#">Power Banks</a></li>
+          <li><a href="#">Portable Speakers</a></li>
+          <li><a href="#">Health Devices</a></li>
+          <li><a href="#">Retro Handset</a></li>
+          <li><a href="#">Mouse	</a></li>
+        </ul>
+      </li>
+ 
+</ul>
+  </div>
+  
+        
+        
+  <!---Footer----->
+  <div data-role="footer" data-position="fixed" data-theme="a" class=" ui-footer-center footer-pg">
+    <p>Copyright 2014 Boonbox Online Shopping Cart. </p>
+    <p>Toll Free No: +91 98411 11943 </p>
+  </div>
+  <div data-role="popup" id="settingMenu" data-theme="c">
+    <ul data-role="listview" data-inset="true" style="min-width:210px;">
+      <li data-role="divider" data-theme="e">Settings</li>
+      <li data-icon='false'><a href="#"><i class='fa fa-user'></i> Edit Profile</a></li>
+      <li data-icon='false'><a href="index.html"><i class='fa fa-sign-out'></i> Logout</a></li>
+      <li data-icon='false'><a href="#closeit" data-rel="close"><i class='lIcon fa fa-close'></i> Close it!</a></li>
+    </ul>
   </div>
 </div>
+<!-- /page -->
+
+
 
 <!-- Start of third page: #popup -->
 <div data-role="page" id="viewcart" data-theme="a">

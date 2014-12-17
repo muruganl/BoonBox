@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Boonbox Online Shopping Cart</title>
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="css/jquery.mobile-1.3.1.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/idangerous.swiper.css">
+<link rel="stylesheet" href="css/idangerous.swiper.3dflow.css">
+
+<!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<script src="js/customised.js"></script>
+
+<script src='js/jquery.MetaData.js' type="text/javascript" language="javascript"></script>
+ <script src='js/jquery.rating.js' type="text/javascript" language="javascript"></script>
+<!-- Swiper and scrollbar-->
+<script src="js/idangerous.swiper-2.0.min.js"></script>
+<script src="js/idangerous.swiper.3dflow-2.0.js"></script>
+</head>
+<body>
+<div data-role="page" id="mainpage" data-dom-cache="true">
+  <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='c'>
+    <div class="header-top" style="padding-left:0">
+      <div class="pull-left">
+        <h1><a href="#catlists"><i class='fa fa-bars left-ar'></i> </a> <a href="home.html" data-ajax='false'><img src="images/logo-papa.png" alt="Boonbox"></a></h1>
+      </div>
+      <div class="pull-right topLinks"> <a href="#searchpanel"> <i class='fa fa-search'></i> </a> <a href="cart.html" class="cart-link"> <i class='fa fa-shopping-cart'></i> <span> 5</span> </a> <a class="setting-hme-top" href="#settingm"><i class='fa fa-ellipsis-v'></i></a> </div>
+    </div>
+  </div>
+  <div class="home-content" data-role="content">
+    <div class="swiper-container featured">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/1.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/1.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/1.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/1.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+        <div class="swiper-slide" style="background-image:url(images/big/2.jpg)"> <a href="#"></a> </div>
+      </div>
+    </div>
+    
+    <!----Slider list--->
+    
+    <div class=" thumbs-header">
+     <div class="clear">
+      <span class="pull-left"><i class="fa fa-dot-circle-o"></i> Popular products </span>
+      <span class="pull-right">
+       <a  href="product-list.html" data-ajax="false" data-role="button" data-mini="true" data-theme="e">more </a>
+      </span>
+     </div>
+     
+    </div>
+    <div class="swiper-container thumbs-cotnainer border-gradient">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <a href="#"> <img src="images/product/album-rh.jpg" alt=""> </a>
+          <div class="app-title">iBall Aasaan2</div>
+          <div class="app-category">Mobiles</div>
+          <div class="app-price">Rs. 3,249 /-</div>
+          <div class="star-ratings">
+           <input name="star3" type="radio" class="star" disabled="disabled"/> <input name="star3" type="radio" class="star" disabled="disabled"/> <input name="star3" type="radio" class="star" disabled="disabled" checked="checked"/> <input name="star3" type="radio" class="star" disabled="disabled" checked="checked"/> <input name="star3" type="radio" class="star" disabled="disabled" checked="checked"/>
+          </div>
+        </div>
+        <div class="swiper-slide"> <a href="#"> <img src="images/product/album-rh.jpg" alt=""> </a>
+          <div class="app-title">iBall Aasaan2</div>
+          <div class="app-category">Tablet</div>
+          <div class="app-price">Rs. 3,249 /-</div>
+          <div class="star-ratings">
+           <input name="star4" type="radio" class="star" disabled="disabled"/> <input name="star4" type="radio" class="star" disabled="disabled"/> <input name="star4" type="radio" class="star" disabled="disabled" checked="checked"/> <input name="star4" type="radio" class="star" disabled="disabled" checked="checked"/> <input name="star4" type="radio" class="star"/>
+          </div>
+        </div>
+        <div class="swiper-slide"> <a href="detail.html" data-ajax="false"> <img src="images/product/album-rh.jpg" alt=""> </a>
+          <div class="app-title">iBall Aasaan2</div>
+          <div class="app-category">Mobiles</div>
+          <div class="app-price">Rs. 3,249 /-</div>
+          <div class="star-ratings">
+           <input name="star5" type="radio" class="star" disabled="disabled"/> <input name="star5" type="radio" class="star" disabled="disabled"/> <input name="star5" type="radio" class="star" disabled="disabled" checked="checked"/> <input name="star5" type="radio" class="star" disabled="disabled"/> <input name="star5" type="radio" class="star"/>
+          </div>
+        </div>
+        <div class="swiper-slide"> <a href="#"> <img src="images/product/album-rh.jpg" alt=""> </a>
+          <div class="app-title">iBall Aasaan2</div>
+          <div class="app-category">Tablet</div>
+          <div class="app-price">Rs. 3,249 /-</div>
+        </div>
+        <div class="swiper-slide"> <a href="#"> <img src="images/product/album-rh.jpg" alt=""> </a>
+          <div class="app-title">iBall Aasaan2</div>
+          <div class="app-category">Mobiles</div>
+          <div class="app-price">Rs. 3,249 /-</div>
+        </div>
+        <div class="swiper-slide"> <a href="#"> <img src="images/product/album-rh.jpg" alt=""> </a>
+          <div class="app-title">iBall Aasaan2</div>
+          <div class="app-category">Tablet</div>
+          <div class="app-price">Rs. 3,249 /-</div>
+        </div>
+        <div class="swiper-slide"> <a href="#"> <img src="images/product/album-rh.jpg" alt=""> </a>
+          <div class="app-title">iBall Aasaan2</div>
+          <div class="app-category">Mobiles</div>
+          <div class="app-price">Rs. 3,249 /-</div>
+        </div>
+      </div>
+    </div>
+    <!----//End Slider list--->
+    
+    <div class="thumbs-header">
+     <div class="clear">
+      <span class="pull-left"><i class="fa fa-dot-circle-o"></i> Top Offers </span>
+      <span class="pull-right">
+       <a data-role="button" data-mini="true" data-theme="e" href="product-grid.html" data-ajax="false">more </a>
+      </span>
+     </div>
+    </div>
+    <!----//Main Slider list--->
+    <div class="swiper-container banners-container border-gradient">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="banner" style="background-image:url(images/big/1.jpg)"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="banner" style="background-image:url(images/big/2.jpg)"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="banner" style="background-image:url(images/big/1.jpg)"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="banner" style="background-image:url(images/big/2.jpg)"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="banner" style="background-image:url(images/big/1.jpg)"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="banner" style="background-image:url(images/big/2.jpg)"></div>
+        </div>
+      </div>
+    </div>
+    <!----//End Slider list---> 
+    
+  </div>
+  
+  <!-- /content --> 
+  
+  <!---Footer----->
+  <div data-role="footer" data-position="fixed" data-theme="e" class="ui-footer-center footer-pg">
+    <p>&copy; 2014 Boonbox Online Shopping Cart. </p>
+    <p>Toll Free No: +91 98411 11943 </p>
+  </div>
+  
+  <!--setting menu--->
+  <div data-role="panel" class="setting_menu" id="settingm" data-position="right" data-display="overlay" data-theme="c">
+    <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+      <li> <a href="#" data-transition="slide"><i class='fa fa-user'></i> Ramkumar</a> </li>
+      <li> <a href="#"><i class='fa fa-heart'></i> WishList</a> </li>
+      <li> <a href="#"><i class='fa fa-truck'></i> My Orders</a> </li>
+      <li> <a href="#"><i class='fa fa-newspaper-o'></i> My Address</a> </li>
+      <li> <a href="index.html" data-ajax="false"><i class='fa fa-power-off'></i> Logout</a> </li>
+    </ul>
+  </div>
+  
+  <!----Right menu--->
+  <div data-role="panel" id="catlists" class="cate-list" data-position="left" data-display="overlay" data-theme="c">
+    <ul data-role="collapsible-set" data-inset="false">
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-desktop'></i> Electronics</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="product-list.html" data-ajax="false">Mobile Phones</a></li>
+          <li><a href="#" data-ajax="false">Tablets</a></li>
+          <li><a href="#" data-ajax="false">Fone pad</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-fire'></i> Cookware</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#" data-ajax="false">Pressure Cooker</a></li>
+          <li><a href="#" data-ajax="false">Non-Stick</a></li>
+          <li><a href="#" data-ajax="false">Cooker</a></li>
+          <li><a href="#" data-ajax="false">SS Utensils</a></li>
+          <li><a href="#" data-ajax="false">Murugan</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-camera-retro'></i> Home & Kitchen Appliances</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#" data-ajax="false">Personal Care</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-stethoscope'></i> Health</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#" data-ajax="false">Personal Care</a></li>
+        </ul>
+      </li>
+      
+      <li data-role="collapsible" data-iconpos="right" style="padding:0">
+        <h2><i class='fa fa-briefcase'></i> Accessories</h2>
+        <ul data-role="listview" data-theme="c" data-icon="false">
+          <li><a href="#">Portable Scanner</a></li>
+          <li><a href="#">Stylus Pens</a></li>
+          <li><a href="#">Laptop Cooler</a></li>
+          <li><a href="#">USB Hub</a></li>
+          <li><a href="#">Head Phones</a></li>
+          <li><a href="#">Shutter Ball</a></li>
+          <li><a href="#">Power Banks</a></li>
+          <li><a href="#">Portable Speakers</a></li>
+          <li><a href="#">Health Devices</a></li>
+          <li><a href="#">Retro Handset</a></li>
+          <li><a href="#">Mouse	</a></li>
+        </ul>
+      </li>
+ 
+</ul>
+  </div>
+  
+  <!-- /panel -->
+  <div data-role="panel" class="searchpanel" id="searchpanel" data-position="right" data-display="overlay" data-theme="c">
+    <div class="search-form">
+      <table style='width:100%'>
+        <tr>
+          <td><input type="search" name="search" placeholder="Search" data-inline="true" ></td>
+          <td style='font-size:80%; width:7em'><button id="btnUpdateWhat" type="search" data-inline='true'><i class='lIcon fa fa-search-plus'></i></button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- /panel --> 
+  
+  <!-- /Sort by -->
+  <div data-role="popup" class="sortby" id="sortby" data-theme="c">
+    <form>
+      <fieldset data-role="controlgroup" data-mini="true" style="min-width:210px;" >
+        <legend>Sort by</legend>
+        <input type="radio" name="radio-choice-v-6" id="radio-choice-v-6a" value="on" checked="checked">
+        <label for="radio-choice-v-6a">Popular items</label>
+        <input type="radio" name="radio-choice-v-6" id="radio-choice-v-6b" value="off">
+        <label for="radio-choice-v-6b">Price Low</label>
+        <input type="radio" name="radio-choice-v-6" id="radio-choice-v-6c" value="other">
+        <label for="radio-choice-v-6c">Price High</label>
+      </fieldset>
+    </form>
+  </div>
+  
+  
+  
+  
+</div>
+<!-- /page -->
+
+
+</body>
+</html>
